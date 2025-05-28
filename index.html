@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de ferramentas da empresa com acesso a todos os sistemas internos">
+
+    <title>Portal de Ferramentas</title>
+
+    <link rel="icon" href="assets/image/icon.jpg" type="image/jpg">
+    <link rel="apple-touch-icon" href="assets/image/icon.jpg">
+
+    <!-- CSS do Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Ícones do Bootstrap -->
+    <link href="assets/css/icons-main/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container-principal">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12 col-xl-12">
+                <section class="secao-boas-vindas text-center text-md-start" aria-labelledby="titulo-boas-vindas">
+                    <h1 id="titulo-boas-vindas" class="titulo-boas-vindas">Portal de Ferramentas</h1>
+                    <p class="subtitulo-boas-vindas">Acesse todos os sistemas e ferramentas da empresa</p>
+                </section>
+
+                <section class="container-estatisticas" aria-label="Estatísticas do portal">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="cartao-estatistica h-100">
+                                <div class="numero-estatistica">6</div>
+                                <div class="rotulo-estatistica">Ferramentas Disponíveis</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-6">
+                            <div class="cartao-estatistica h-100">
+                                <div class="numero-estatistica">3</div>
+                                <div class="rotulo-estatistica">Categorias</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-principal">
+        <div class="row">
+            <div class="col-12 col-lg-12 col-xl-12">
+                <section class="container-busca mb-4" aria-labelledby="rotulo-busca">
+                    <h2 id="rotulo-busca" class="visually-hidden">Busca de ferramentas</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-12 mx-auto">
+                            <div class="input-group">
+                                <span class="input-group-text bg-white border-end-0">
+                                    <i class="bi bi-search text-muted" aria-hidden="true"></i>
+                                </span>
+                                <input type="text" class="form-control campo-busca border-start-0" id="searchInput"
+                                    placeholder="Buscar ferramentas..." aria-label="Digite para buscar ferramentas">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="grade-ferramentas" id="toolsContainer" aria-label="Ferramentas disponíveis">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <article class="cartao-categoria h-100" data-category="ti">
+                                <h3 class="titulo-categoria">
+                                    <i class="bi bi-gear me-2" aria-hidden="true"></i>
+                                    Gestão de TI
+                                </h3>
+                                <div class="lista-ferramentas">
+                                    <a href="http://192.168.0.238/glpi" target="_blank" class="link-ferramenta"
+                                        data-tool="GLPI" rel="noopener noreferrer">
+                                        <div class="d-flex align-items-start">
+                                            <div class="icone-ferramenta" aria-hidden="true">
+                                                <i class="bi bi-tools"></i>
+                                            </div>
+                                            <div class="conteudo-ferramenta">
+                                                <div class="nome-ferramenta">GLPI</div>
+                                                <div class="descricao-ferramenta">Sistema de gestão de TI e chamados
+                                                </div>
+                                                <div class="url-ferramenta">192.168.0.238/glpi</div>
+                                            </div>
+                                            <i class="bi bi-arrow-up-right icone-link-externo" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+
+                                    <a href="http://192.168.0.238/ocsreports/" target="_blank" class="link-ferramenta"
+                                        data-tool="OCS Reports" rel="noopener noreferrer">
+                                        <div class="d-flex align-items-start">
+                                            <div class="icone-ferramenta" aria-hidden="true">
+                                                <i class="bi bi-bar-chart-line"></i>
+                                            </div>
+                                            <div class="conteudo-ferramenta">
+                                                <div class="nome-ferramenta">OCS Reports</div>
+                                                <div class="descricao-ferramenta">Relatórios de inventário de hardware
+                                                </div>
+                                                <div class="url-ferramenta">192.168.0.238/ocsreports</div>
+                                            </div>
+                                            <i class="bi bi-arrow-up-right icone-link-externo" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <article class="cartao-categoria h-100" data-category="sistemas">
+                                <h3 class="titulo-categoria">
+                                    <i class="bi bi-building me-2" aria-hidden="true"></i>
+                                    Sistemas
+                                </h3>
+                                <div class="lista-ferramentas">
+                                    <a href="https://qive.com.br/" target="_blank" class="link-ferramenta"
+                                        data-tool="Arquivei" rel="noopener noreferrer">
+                                        <div class="d-flex align-items-start">
+                                            <div class="icone-ferramenta" aria-hidden="true">
+                                                <i class="bi bi-file-earmark-text"></i>
+                                            </div>
+                                            <div class="conteudo-ferramenta">
+                                                <div class="nome-ferramenta">Arquivei (Qive)</div>
+                                                <div class="descricao-ferramenta">Automação de documentos fiscais</div>
+                                                <div class="url-ferramenta">qive.com.br</div>
+                                            </div>
+                                            <i class="bi bi-arrow-up-right icone-link-externo" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://www.wolfstore.com.br/wolfstore_pedidofeira/" target="_blank"
+                                        class="link-ferramenta" data-tool="Pedidos QrCode" rel="noopener noreferrer">
+                                        <div class="d-flex align-items-start">
+                                            <div class="icone-ferramenta" aria-hidden="true">
+                                                <i class="bi bi-upc-scan"></i>
+                                            </div>
+                                            <div class="conteudo-ferramenta">
+                                                <div class="nome-ferramenta">Pedidos QrCode</div>
+                                                <div class="descricao-ferramenta">Sistema de pedidos com QR Code</div>
+                                                <div class="url-ferramenta">wolfstore.com.br/wolfstore_pedidofeira</div>
+                                            </div>
+                                            <i class="bi bi-arrow-up-right icone-link-externo" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <article class="cartao-categoria" data-category="midia">
+                                <h3 class="titulo-categoria">
+                                    <i class="bi bi-collection me-2" aria-hidden="true"></i>
+                                    Mídia e Links
+                                </h3>
+                                <div class="lista-ferramentas">
+                                    <a href="http://192.168.0.238/photos/" target="_blank" class="link-ferramenta"
+                                        data-tool="Photos" rel="noopener noreferrer">
+                                        <div class="d-flex align-items-start">
+                                            <div class="icone-ferramenta" aria-hidden="true">
+                                                <i class="bi bi-images"></i>
+                                            </div>
+                                            <div class="conteudo-ferramenta">
+                                                <div class="nome-ferramenta">Photos</div>
+                                                <div class="descricao-ferramenta">Galeria de fotos da empresa</div>
+                                                <div class="url-ferramenta">192.168.0.238/photos</div>
+                                            </div>
+                                            <i class="bi bi-arrow-up-right icone-link-externo" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://www.wolfstore.com.br/link/" target="_blank" class="link-ferramenta"
+                                        data-tool="Links" rel="noopener noreferrer">
+                                        <div class="d-flex align-items-start">
+                                            <div class="icone-ferramenta" aria-hidden="true">
+                                                <i class="bi bi-link-45deg"></i>
+                                            </div>
+                                            <div class="conteudo-ferramenta">
+                                                <div class="nome-ferramenta">Links</div>
+                                                <div class="descricao-ferramenta">Gerenciador de links úteis</div>
+                                                <div class="url-ferramenta">wolfstore.com.br/link</div>
+                                            </div>
+                                            <i class="bi bi-arrow-up-right icone-link-externo" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white py-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="desenvolvedor">
+                        Desenvolvido por
+                        <a href="https://www.linkedin.com/in/henrique-rosa-da-cruz-1a7030237" target="_blank"
+                            rel="noopener noreferrer">Henrique Rosa da Cruz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
